@@ -1,0 +1,4 @@
+<launch>
+    <node name="human_hand_node" pkg="human_and_pose" type="human_and_hand.py" output="screen"/>
+</launch>
+

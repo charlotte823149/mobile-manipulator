@@ -1,0 +1,4 @@
+<launch>
+  <node pkg="main" type="with_base.py" output="screen"/>
+  <node pkg="main" type="main_script.py" output="screen"/>
+</launch>

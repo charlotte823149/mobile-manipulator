@@ -1,0 +1,44 @@
+{
+    "predictions": [
+        {
+            "x": 375.5,
+            "y": 434.5,
+            "width": 139.0,
+            "height": 509.0,
+            "confidence": 0.7925475835800171,
+            "class": "Wrench"
+        },
+        {
+            "x": 197.0,
+            "y": 379.0,
+            "width": 218.0,
+            "height": 618.0,
+            "confidence": 0.7868027687072754,
+            "class": "Wrench"
+        },
+        {
+            "x": 198.5,
+            "y": 376.5,
+            "width": 221.0,
+            "height": 633.0,
+            "confidence": 0.7283115983009338,
+            "class": "Hammer"
+        },
+        {
+            "x": 694.0,
+            "y": 427.5,
+            "width": 220.0,
+            "height": 537.0,
+            "confidence": 0.7231417298316956,
+            "class": "Screwdriver Bit Set"
+        },
+        {
+            "x": 486.0,
+            "y": 427.0,
+            "width": 102.0,
+            "height": 530.0,
+            "confidence": 0.63478684425354,
+            "class": "Screwdriver Bit Set"
+        }
+    ]
+}

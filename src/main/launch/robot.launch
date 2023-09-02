@@ -1,0 +1,15 @@
+<launch>
+
+  <!-- Launch ur_robot_driver with arguments -->
+  <include file="$(find ur_robot_driver)/launch/ur5_bringup.launch">
+    <arg name="robot_ip" value="192.168.0.100" />
+    <arg name="kinematics_config" value="$(find ur_calibration)/etc/my_robot_calibration.yaml" />
+  </include>
+
+  <!-- Launch robotiq_2f_gripper_control -->
+  <include file="$(find robotiq_2f_gripper_control)/launch/gripper_bringup.launch" />
+
+  <!-- Launch Move it! -->
+  <include file="$(find mobile_robot_moveit)/launch/moveit.launch" />
+
+</launch>

@@ -1,0 +1,10 @@
+<launch>
+  <!-- Launch realsense2_camera with arguments -->
+  <include file="$(find realsense2_camera)/launch/rs_camera.launch">
+    <arg name="filters" value="pointcloud" />
+    <arg name="serial_no" value="925322061835" />
+  </include>
+  
+  <include file="$(find simple_grasping)/launch/basic_perception_dbg.launch"/>
+  <include file="$(find tool_detect)/launch/tool_detect.launch"/>
+</launch>

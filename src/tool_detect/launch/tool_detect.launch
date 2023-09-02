@@ -1,0 +1,4 @@
+<launch>
+  <node pkg="tool_detect" type="tool_detect.py" name="tool_detect_node" output="screen">
+  </node>
+</launch>
