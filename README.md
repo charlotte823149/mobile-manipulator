@@ -2,7 +2,7 @@
 This project is the document for Ur5 arm cooperate with mobile base to implement an robot assistant system. Aim to free human worker from tideous and repetitive movement from getting mechanical tools. Base on ROS and realsence camera, we used three computers for handling the system, which is the master script(this repository), GUI and mobile base. In this repository, we have 1. master main script for handling the comminucation of arm, GUI and mobile base 2. arm robot motion planning 3. yoloV8 for mechanical tool detection 4. yoloV8 for human instance detection and utilize mediaipe for hand pose detection.
 
 ## require packages
-For starting this project you will need some packages from other repositories.
+For starting this project you will need some packages from other repositories: 
 - Universal robot: https://github.com/ros-industrial/robotiq
 - realsense camera: https://github.com/IntelRealSense/librealsense
 - simple grasping: https://github.com/mikeferguson/simple_grasping
