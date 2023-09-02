@@ -3,10 +3,10 @@ This project is the document for Ur5 arm cooperate with mobile base to implement
 
 ## require packages
 For starting this project you will need some packages from other repositories.
-Universal robot: https://github.com/ros-industrial/robotiq
-realsense camera: https://github.com/IntelRealSense/librealsense
-simple grasping: https://github.com/mikeferguson/simple_grasping
-mediapipe(place under tool_detect/src): https://github.com/google/mediapipe
+- Universal robot: https://github.com/ros-industrial/robotiq
+- realsense camera: https://github.com/IntelRealSense/librealsense
+- simple grasping: https://github.com/mikeferguson/simple_grasping
+- mediapipe(place under tool_detect/src): https://github.com/google/mediapipe
 
 ## require hardwares(for this repository)
 Ur5 arm robot
