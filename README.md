@@ -13,33 +13,29 @@ For starting this project you will need some packages from other repositories:
 - realsense camera d415 or advanced version x2
 
 ## tool_detect
-### src
-tool.detect.py:
+### src/tool.detect.py:
 In this project, we are using yoloV8 self-trained model for five categories bounding box detection, which are: Hammer, Wrench, Pliers, Screwdriver and Fasteners box(a black solid box with bolts inside). After the getting the pixel range of the target object, the script will further publish the point cloud data within this range to let simple grasping segment out the object's outline. With object's pose and orientation, we can further calculate the desire grasping position on the object.
 
 ## human_and_pose
-### src
-human_and_hand.py:
+### src/human_and_hand.py:
 For implement a secured hand off, we use yoloV8 pre_trained model to getting the bounding box infomation of human body. Then use this pixel range as an input for mediapipe hand pose detection, which can cut down the computation cost for the image processing. Meanwhile, a realsense camera d415 will record the depth value for each point cloud data, which will further level the accuracy of hand off distance.
 
 ## main
-### launch
-robot.launch:
+### launch/robot.launch:
 Launch sufficient package for establish the communication with Ur5 robot and moveit for commanding robot.
 
-tool.launch:
+### launch/tool.launch:
 Launch realsnse camera, simple grasping and tool_detect script.
 
-human.launch:
+### launch/human.launch:
 Launch human and hand gesture detection script.
 
-### scripts
-main_script.py:
+### scripts/main_script.py:
 1. Handling the communication of arm robot and mobile base.
 2. Display the sufficient information to GUI window, such as: tool status, estimated time and task queue list.
 3. Handling the "urgent task" and "regular task" process order.
 
-with_base.py:
+### scripts/with_base.py:
 1. Ur5 arm robot motion planning.
 2. Setting basic pose movement, like: startting, scaning and tool-in-hand posture.
 3. Communication with tool detection script: sending start and end signal, processing result publish from simple grasping.
