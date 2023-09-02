@@ -8,9 +8,11 @@ For starting this project you will need some packages from other repositories:
 - simple grasping: https://github.com/mikeferguson/simple_grasping
 - mediapipe(place under tool_detect/src): https://github.com/google/mediapipe
 
-## require hardwares(for this repository):
+## require hardwares:
 - Ur5 arm robot
 - realsense camera d415 or advanced version x2
+- Mobile base
+- realsense camera 435 and tracking camera
 
 ## tool_detect
 ### src/tool.detect.py:
