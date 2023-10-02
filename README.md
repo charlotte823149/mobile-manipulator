@@ -42,3 +42,14 @@ Launch human and hand gesture detection script.
 2. Setting basic pose movement, like: startting, scaning and tool-in-hand posture.
 3. Communication with tool detection script: sending start and end signal, processing result publish from simple grasping.
 4. Communication with human and hand pose detection script: sendign start and end signal, transfering result from camera coordinate to robot's coordinate.
+
+## base
+### scripts/multi_goal_script.py:
+1. Setting three sequence of position and orientation for goal_A, goal_B and goal_Tool.
+2. Communication with main script: getting start and recovery signal, sending feedback of executing trajectory.
+
+## gui
+### scripts/GUI.py:
+1. Making graphic user interface for user to send command.
+2. Showing estimate arriving time and task request list.
+3. Two types of request: regular and urgent(provide prior sequence for executing task)
